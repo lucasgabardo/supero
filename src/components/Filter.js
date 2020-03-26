@@ -64,8 +64,7 @@ const VerticalCenter = css`
     top: 50%;
 `;
 
-const FilterWrapper = styled.div`
-`;
+const FilterWrapper = styled.div``;
 
 const FilterBar = styled.div`
     display: filter;
@@ -90,7 +89,11 @@ const Results = styled.div`
 
     div{
         ${VerticalCenter};   
-    }    
+    }
+
+    @media (max-width: 600px){
+        display: none;
+    }
 `;
 
 const Title = styled.div`
